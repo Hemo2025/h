@@ -1,0 +1,155 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 28px;
+    color: #00ffcc;
+}
+
+.controls {
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.controls input,
+.controls select {
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    background-color: #1a1a1a;
+    color: #fff;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px #00ffcc;
+}
+
+.controls input::placeholder {
+    color: #aaa;
+}
+
+.channel-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px auto;
+    max-width: 90%;
+}
+
+.channel-button {
+    background-color: #111;
+    border: 2px solid #00ffcc;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #00ffcc;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 150px;
+    text-align: center;
+}
+
+.channel-button:hover {
+    background-color: #00ffcc;
+    color: #000;
+}
+
+.video-container {
+    margin: 30px auto;
+    max-width: 90%;
+    border: 2px solid #00ffcc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px #00ffcc88;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    background: #000;
+}
+
+.footer {
+    margin-top: 40px;
+    padding: 15px;
+    background-color: #111;
+    color: #888;
+    font-size: 14px;
+    text-align: center;
+    border-top: 1px solid #222;
+}
+
+.app-header {
+    background-color: #111;
+    padding: 15px 0;
+    border-bottom: 2px solid #00ffcc;
+    box-shadow: 0 0 10px #00ffcc55;
+}
+
+.logo {
+    color: #00ffcc;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    font-size: 28px;
+}
+
+.footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #111;
+    color: #ccc;
+    font-size: 14px;
+    text-align: center;
+    border-top: 2px solid #00ffcc44;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer .about {
+    font-size: 13px;
+    color: #999;
+    max-width: 600px;
+    direction: rtl;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.social-links a {
+    color: #00ffcc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #fff;
+}

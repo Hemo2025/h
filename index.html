@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Humam TV - M3U</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header class="app-header">
+        <div class="logo">
+            <span class="logo-icon">📺</span> Humam TV
+        </div>
+    </header>
+
+    <h1> القنوات </h1>
+
+    <!-- البحث والتصنيف -->
+    <div class="controls">
+        <input type="text" id="searchInput" placeholder="ابحث عن قناة...">
+        <select id="categoryFilter">
+            <option value="all">كل القنوات</option>
+            <option value="news">إخبارية</option>
+            <option value="sports">رياضية</option>
+            <option value="kids">أطفال</option>
+        </select>
+    </div>
+
+    <!-- القنوات -->
+    <div id="channelList" class="channel-list"></div>
+
+    <!-- الفيديو -->
+    <div class="video-container">
+        <video id="video" controls width="100%"></video>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <p><strong>جميع الحقوق محفوظة لـ همام بن علي © 2025</strong></p>
+            <p class="about">حول التطبيق: Humam TV هو منصة مجانية لعرض القنوات التلفزيونية المباشرة بجودة عالية.</p>
+            <div class="social-links">
+                <a href="https://wa.me/966511727985" target="_blank">واتساب</a>
+                <a href="https://t.me/username" target="_blank">تيليجرام</a>
+                <a href="mailto:your@email.com">البريد الإلكتروني</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
