@@ -72,16 +72,24 @@ function displayChannels() {
             btn.textContent = channel.name;
             btn.className = 'channel-button';
             btn.onclick = () => {
+                let streamURL = channel.url;
+
+                // تحويل http إلى https باستخدام بروكسي فقط إذا الرابط غير آمن
+                if (streamURL.startsWith('http://')) {
+                    streamURL = 'https://cors-proxy.fringe.zone/' + streamURL;
+                }
+
                 if (hls) {
-                    hls.loadSource(channel.url);
+                    hls.loadSource(streamURL);
                     hls.on(Hls.Events.MANIFEST_PARSED, () => {
                         video.play();
                     });
                 } else {
-                    video.src = channel.url;
+                    video.src = streamURL;
                     video.play();
                 }
             };
+
             channelList.appendChild(btn);
         });
 }
