@@ -6,24 +6,42 @@ const categoryFilter = document.getElementById('categoryFilter');
 // القنوات مصنفة
 const channels = [
     {
+        name: "الجزيرة مباشر",
+        url: "https://live-hls-apps-ajm-fa.getaj.net/AJM/index.m3u8",
+
+        category: "news"
+    },
+    {
         name: "العربية",
-        url: "https://live.alarabiya.net/alarabiapublish/alarabiya.smil/playlist.m3u8",
+        url: "https://live.alarabiya.net/alarabiapublish/alarabiya.smil/alarabiapublish/alarabiya_720p/chunks.m3u8",
+
         category: "news"
     },
     {
-        name: "فرنسا 24",
-        url: "https://cdn.sky1.live/hls/fr24.m3u8",
+        name: "يمن شباب",
+        url: "https://starmenajo.com/hls/yemenshabab/index.m3u8",
+
         category: "news"
     },
     {
-        name: "arabia",
-        url: "https://live.alarabiya.net/alarabiapublish/alarabiya.smil/playlist.m3u8",
+        name: "ام بي سي 1",
+        url: "https://d3o3cim6uzorb4.cloudfront.net/out/v1/0965e4d7deae49179172426cbfb3bc5e/index_3.m3u8",
+        category: "drama"
+    },
+    {
+        name: "المجد",
+        url: "https://5aafcc5de91f1.streamlock.net/almagd.tv/almagd.smil/chunklist_w1219027670_b1500000_t64SEQ=.m3u8",
         category: "news"
     },
     {
-        name: "beIN SPORTS News",
-        url: "http://tv2iptv.com:8000/live/Dylan/Dylan123/3524.m3u8",
+        name: "beIN SPORTS 1",
+        url: "http://wo0dyefk.dienalt.org/iptv/DV3AC2Q6YSR9XE/6123/index.m3u8",
         category: "sports"
+    },
+    {
+        name: "quran kareem",
+        url: "https://al-ekhbaria-prod-dub.shahid.net/out/v1/9885cab0a3ec4008b53bae57a27ca76b/index.m3u8",
+        category: "quran"
     }
     // أضف المزيد حسب الحاجة
 ];
