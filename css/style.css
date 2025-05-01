@@ -1,5 +1,7 @@
 body {
     background-color: #000;
+    background: url(../img/humam.png) no-repeat;
+    background-size: cover;
     color: #fff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
